@@ -12,6 +12,7 @@
 		47C35AD22BD6B546000BDB2D /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */; };
 		47C35AD82BD6C476000BDB2D /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 47C35AD72BD6C476000BDB2D /* schema.graphqls */; };
 		47C35ADB2BD6C543000BDB2D /* RocketReserverAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 47C35ADA2BD6C543000BDB2D /* RocketReserverAPI */; };
+		47C35ADD2BD6CFD2000BDB2D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C35ADC2BD6CFD2000BDB2D /* Network.swift */; };
 		66F96F9B29FAC0D600713B80 /* RocketReserverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96F9A29FAC0D600713B80 /* RocketReserverApp.swift */; };
 		66F96F9D29FAC0D600713B80 /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F96F9C29FAC0D600713B80 /* LaunchListView.swift */; };
 		66F96F9F29FAC0D700713B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F96F9E29FAC0D700713B80 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = SOURCE_ROOT; };
 		47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
 		47C35AD72BD6C476000BDB2D /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		47C35ADC2BD6CFD2000BDB2D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		66F96F9729FAC0D600713B80 /* RocketReserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketReserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F96F9A29FAC0D600713B80 /* RocketReserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketReserverApp.swift; sourceTree = "<group>"; };
 		66F96F9C29FAC0D600713B80 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				66F96FE929FC183200713B80 /* NotificationView.swift */,
 				66F96F9E29FAC0D700713B80 /* Assets.xcassets */,
 				66F96FA029FAC0D700713B80 /* Preview Content */,
+				47C35ADC2BD6CFD2000BDB2D /* Network.swift */,
 			);
 			path = RocketReserver;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				66F96FEA29FC183200713B80 /* NotificationView.swift in Sources */,
 				66F96FC729FACE1A00713B80 /* DetailView.swift in Sources */,
 				66F96FDC29FAE88E00713B80 /* LaunchListViewModel.swift in Sources */,
+				47C35ADD2BD6CFD2000BDB2D /* Network.swift in Sources */,
 				66F96FE829FC0D7700713B80 /* View+Alert.swift in Sources */,
 				66F96FC529FAC7F200713B80 /* LaunchRow.swift in Sources */,
 				66F96FE029FAFB9600713B80 /* LoginView.swift in Sources */,
