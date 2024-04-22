@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
 		47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = SOURCE_ROOT; };
 		47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
 		47C35AD72BD6C476000BDB2D /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 				47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */,
 				47C35AD72BD6C476000BDB2D /* schema.graphqls */,
 				47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */,
+				4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */,
 			);
 			path = graphql;
 			sourceTree = "<group>";

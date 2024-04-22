@@ -1,35 +1,46 @@
 import SwiftUI
+import RocketReserverAPI
+import SDWebImageSwiftUI
 
 struct DetailView: View {
     private let placeholderImg = Image("placeholder")
     
     @StateObject private var viewModel: DetailViewModel
     
-    init() {
-        _viewModel = StateObject(wrappedValue: DetailViewModel())
+    init(launchID: RocketReserverAPI.ID) {
+        _viewModel = StateObject(wrappedValue: DetailViewModel(launchID: launchID))
     }
-    
+
     var body: some View {
         VStack {
-            if let launch = Optional("PLACEHOLDER") {
+            if let launch = viewModel.launch {
                 HStack(spacing: 10) {
-                    placeholderImg
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 165, height: 165)
-                    
+                    if let missionPatch = launch.mission?.missionPatch {
+                                        WebImage(url: URL(string: missionPatch))
+                                            .resizable()
+                                            .placeholder(placeholderImg)
+                                            .indicator(.activity)
+                                            .scaledToFit()
+                                            .frame(width: 165, height: 165)
+                    } else {
+                        placeholderImg
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 165, height: 165)
+                    }
+
                     VStack(alignment: .leading, spacing: 4) {
-                        if let missionName = Optional("Mission Name") {
+                        if let missionName = launch.mission?.name {
                             Text(missionName)
                                 .font(.system(size: 24, weight: .bold))
                         }
                         
-                        if let rocketName = Optional("Rocket Name") {
+                        if let rocketName = launch.rocket?.name {
                             Text("🚀 \(rocketName)")
                                 .font(.system(size: 18))
                         }
                         
-                        if let launchSite = Optional("Launch Site") {
+                        if let launchSite = launch.site {
                             Text(launchSite)
                                 .font(.system(size: 14))
                         }
@@ -38,7 +49,7 @@ struct DetailView: View {
                     Spacer()
                 }
                 
-                if launch == "PLACEHOLDER" {
+                if launch.isBooked {
                     cancelTripButton()
                 } else {
                     bookTripButton()
@@ -47,10 +58,10 @@ struct DetailView: View {
             Spacer()
         }
         .padding(10)
-        .navigationTitle("Mission Name")
+        .navigationTitle(viewModel.launch?.mission?.name ?? "")
         .navigationBarTitleDisplayMode(.inline)
         .task {
-            
+            viewModel.loadLaunchDetails()
         }
         .sheet(isPresented: $viewModel.isShowingLogin) {
             LoginView(isPresented: $viewModel.isShowingLogin)
@@ -82,6 +93,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(launchID: "110")
     }
 }
