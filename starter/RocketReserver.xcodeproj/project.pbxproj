@@ -34,6 +34,8 @@
 /* Begin PBXFileReference section */
 		4724A6502BD8114100CB37BC /* AuthorizationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInterceptor.swift; sourceTree = "<group>"; };
 		4724A6522BD8122600CB37BC /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		4724A6542BD853FA00CB37BC /* BookTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookTrip.graphql; sourceTree = "<group>"; };
+		474558DB2BD87A0100CAD0D6 /* CancelTrip.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CancelTrip.graphql; sourceTree = "<group>"; };
 		4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
 		47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = SOURCE_ROOT; };
 		47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 				47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */,
 				4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */,
 				47D7CE002BD7ECFB00221726 /* Login.graphql */,
+				4724A6542BD853FA00CB37BC /* BookTrip.graphql */,
+				474558DB2BD87A0100CAD0D6 /* CancelTrip.graphql */,
 				4724A6502BD8114100CB37BC /* AuthorizationInterceptor.swift */,
 				4724A6522BD8122600CB37BC /* NetworkInterceptorProvider.swift */,
 			);
