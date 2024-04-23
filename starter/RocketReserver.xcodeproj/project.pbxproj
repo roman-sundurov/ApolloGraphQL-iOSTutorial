@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4724A6512BD8114100CB37BC /* AuthorizationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724A6502BD8114100CB37BC /* AuthorizationInterceptor.swift */; };
+		4724A6532BD8122600CB37BC /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724A6522BD8122600CB37BC /* NetworkInterceptorProvider.swift */; };
 		47C35ACE2BD6B1ED000BDB2D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 47C35ACD2BD6B1ED000BDB2D /* Apollo */; };
 		47C35AD02BD6B1ED000BDB2D /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 47C35ACF2BD6B1ED000BDB2D /* ApolloWebSocket */; };
 		47C35AD22BD6B546000BDB2D /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4724A6502BD8114100CB37BC /* AuthorizationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInterceptor.swift; sourceTree = "<group>"; };
+		4724A6522BD8122600CB37BC /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
 		4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchDetails.graphql; sourceTree = "<group>"; };
 		47C35AD12BD6B546000BDB2D /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = SOURCE_ROOT; };
 		47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */,
 				4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */,
 				47D7CE002BD7ECFB00221726 /* Login.graphql */,
+				4724A6502BD8114100CB37BC /* AuthorizationInterceptor.swift */,
+				4724A6522BD8122600CB37BC /* NetworkInterceptorProvider.swift */,
 			);
 			path = graphql;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 				66F96FEA29FC183200713B80 /* NotificationView.swift in Sources */,
 				66F96FC729FACE1A00713B80 /* DetailView.swift in Sources */,
 				66F96FDC29FAE88E00713B80 /* LaunchListViewModel.swift in Sources */,
+				4724A6512BD8114100CB37BC /* AuthorizationInterceptor.swift in Sources */,
 				47C35ADD2BD6CFD2000BDB2D /* Network.swift in Sources */,
 				66F96FE829FC0D7700713B80 /* View+Alert.swift in Sources */,
+				4724A6532BD8122600CB37BC /* NetworkInterceptorProvider.swift in Sources */,
 				66F96FC529FAC7F200713B80 /* LaunchRow.swift in Sources */,
 				66F96FE029FAFB9600713B80 /* LoginView.swift in Sources */,
 				66F96F9B29FAC0D600713B80 /* RocketReserverApp.swift in Sources */,
