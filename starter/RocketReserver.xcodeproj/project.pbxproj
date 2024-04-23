@@ -35,6 +35,7 @@
 		47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LaunchList.graphql; sourceTree = "<group>"; };
 		47C35AD72BD6C476000BDB2D /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
 		47C35ADC2BD6CFD2000BDB2D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		47D7CE002BD7ECFB00221726 /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
 		66F96F9729FAC0D600713B80 /* RocketReserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketReserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F96F9A29FAC0D600713B80 /* RocketReserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketReserverApp.swift; sourceTree = "<group>"; };
 		66F96F9C29FAC0D600713B80 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 				47C35AD72BD6C476000BDB2D /* schema.graphqls */,
 				47C35AD62BD6C40C000BDB2D /* LaunchList.graphql */,
 				4799B1C02BD71F7F007A87AC /* LaunchDetails.graphql */,
+				47D7CE002BD7ECFB00221726 /* Login.graphql */,
 			);
 			path = graphql;
 			sourceTree = "<group>";

@@ -1,4 +1,7 @@
 import SwiftUI
+import Apollo
+import RocketReserverAPI
+import KeychainSwift
 
 class LoginViewModel: ObservableObject {
     
@@ -28,6 +31,27 @@ class LoginViewModel: ObservableObject {
         }
         
         // TODO (Section 10 - https://www.apollographql.com/docs/ios/tutorial/tutorial-first-mutation#implement-the-login-logic)
+        Network.shared.apollo.perform(mutation: LoginMutation(email: email)) { [weak self] result in
+            defer {
+                self?.isSubmitEnabled = true
+            }
+
+            switch result {
+            case .success(let graphQLResult):
+                if let token = graphQLResult.data?.login?.token {
+                    // TODO - store token securely
+                    let keychain = KeychainSwift()
+                    keychain.set(token, forKey: LoginView.loginKeychainKey)
+                    self?.isPresented = false
+                }
+
+                if let errors = graphQLResult.errors {
+                    self?.appAlert = .errors(errors: errors)
+                }
+            case .failure(let error):
+                self?.appAlert = .errors(errors: [error])
+            }
+        }
     }
     
     private func validate(email: String) -> Bool {

@@ -1,5 +1,6 @@
 import SwiftUI
 import RocketReserverAPI
+import KeychainSwift
 
 class DetailViewModel: ObservableObject {
 
@@ -61,7 +62,9 @@ class DetailViewModel: ObservableObject {
     
     private func isLoggedIn() -> Bool {
         // TODO (Section 10 - https://www.apollographql.com/docs/ios/tutorial/tutorial-first-mutation#display-the-login-view)
-        return false
+        // return false
+        let keychain = KeychainSwift()
+        return keychain.get(LoginView.loginKeychainKey) != nil
     }
     
 }
