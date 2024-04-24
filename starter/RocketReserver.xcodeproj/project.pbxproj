@@ -42,6 +42,7 @@
 		47C35AD72BD6C476000BDB2D /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
 		47C35ADC2BD6CFD2000BDB2D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		47D7CE002BD7ECFB00221726 /* Login.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Login.graphql; sourceTree = "<group>"; };
+		47E912722BD8872F008D7A10 /* TripsBooked.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TripsBooked.graphql; sourceTree = "<group>"; };
 		66F96F9729FAC0D600713B80 /* RocketReserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketReserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F96F9A29FAC0D600713B80 /* RocketReserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketReserverApp.swift; sourceTree = "<group>"; };
 		66F96F9C29FAC0D600713B80 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 				47D7CE002BD7ECFB00221726 /* Login.graphql */,
 				4724A6542BD853FA00CB37BC /* BookTrip.graphql */,
 				474558DB2BD87A0100CAD0D6 /* CancelTrip.graphql */,
+				47E912722BD8872F008D7A10 /* TripsBooked.graphql */,
 				4724A6502BD8114100CB37BC /* AuthorizationInterceptor.swift */,
 				4724A6522BD8122600CB37BC /* NetworkInterceptorProvider.swift */,
 			);
